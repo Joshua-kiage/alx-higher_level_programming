@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-
-import sys
-
 def add_arg(argv):
     n = len(argv) - 1
     if n == 0:
@@ -16,4 +13,5 @@ def add_arg(argv):
         print(add)
 
 if __name__ == "__main__":
+    import sys
     add_arg(sys.argv)
