@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-import printpic
+import python_for_me
+
+python_for_me.#pythoniscool()
