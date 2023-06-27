@@ -41,7 +41,7 @@ class Square:
         Sets the size of the square.
 
         Args:
-            value (number): The size of the square.
+            value (int): The size of the square.
 
         Raises:
             TypeError: If value is not a number.
@@ -59,7 +59,7 @@ class Square:
         Calculates the area of the square.
 
         Returns:
-            float: The area of the square.
+            int: The area of the square.
         """
         return self.__size ** 2
 
