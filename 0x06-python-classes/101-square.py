@@ -110,3 +110,22 @@ class Square:
                 print()
             for _ in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
+
+    def __str__(self):
+        """
+        Returns a string representation of the square.
+
+        Returns:
+            str: The string representation of the square.
+        """
+        square_str = ""
+        if self.__size == 0:
+            return square_str
+
+        for _ in range(self.__position[1]):
+            square_str += "\n"
+
+        for _ in range(self.__size):
+            square_str += " " * self.__position[0] + "#" * self.__size + "\n"
+
+        return square_str[:-1]
