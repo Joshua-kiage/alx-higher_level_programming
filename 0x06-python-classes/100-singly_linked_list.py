@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines the Node and SinglyLinkedList classes.
+This module defines the Node and SinglyLinkedList classes.
 """
 
 
@@ -9,8 +9,8 @@ class Node:
     Represents a node of a singly linked list.
 
     Attributes:
-        __data (int): data stored in the node.
-        __next_node (Node): eference to the next node in the list.
+        __data (int): The data stored in the node.
+        __next_node (Node): The reference to the next node in the list.
     """
 
     def __init__(self, data, next_node=None):
@@ -30,20 +30,20 @@ class Node:
     @property
     def data(self):
         """
-        Retrieves data stored in the node.
+        Retrieves the data stored in the node.
 
         Returns:
-            int: data stored in the node.
+            int: The data stored in the node.
         """
-        return (self.__data)
+        return self.__data
 
     @data.setter
     def data(self, value):
         """
-        Sets data stored in the node.
+        Sets the data stored in the node.
 
         Args:
-            value (int): data to be stored in the node.
+            value (int): The data to be stored in the node.
 
         Raises:
             TypeError: If value is not an integer.
@@ -56,20 +56,20 @@ class Node:
     @property
     def next_node(self):
         """
-        Retrieves reference to the next node.
+        Retrieves the reference to the next node.
 
         Returns:
-            Node: reference to the next node.
+            Node: The reference to the next node.
         """
-        return (self.__next_node)
+        return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
         """
-        Sets reference to the next node.
+        Sets the reference to the next node.
 
         Args:
-            value (Node): reference to the next node.
+            value (Node): The reference to the next node.
 
         Raises:
             TypeError: If value is not a Node or None.
@@ -85,7 +85,7 @@ class SinglyLinkedList:
     Represents a singly linked list.
 
     Attributes:
-        __head (Node): head node of the list.
+        __head (Node): The head node of the list.
     """
 
     def __init__(self):
@@ -99,7 +99,7 @@ class SinglyLinkedList:
         Inserts a new Node into the correct sorted position in the list (increasing order).
 
         Args:
-            value (int): value of the new Node to be inserted.
+            value (int): The value of the new Node to be inserted.
         """
         new_node = Node(value)
         if self.__head is None:
@@ -116,14 +116,14 @@ class SinglyLinkedList:
 
     def __str__(self):
         """
-        Returns string representation of the list.
+        Returns a string representation of the list.
 
         Returns:
-            str: string representation of the list.
+            str: The string representation of the list.
         """
         node = self.__head
         output = ""
         while node is not None:
             output += str(node.data) + "\n"
             node = node.next_node
-        return (output.rstrip())
+        return output.rstrip()
