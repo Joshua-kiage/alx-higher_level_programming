@@ -15,7 +15,7 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Initializes a new instance of Square class.
+        Initializes a new instance of the Square class.
 
         Args:
             size (int): size of the square. Defaults to 0.
@@ -25,8 +25,6 @@ class Square:
             TypeError: If size is not an integer or position is not a tuple.
             ValueError: If size or position has invalid values.
         """
-        self.__size = 0
-        self.__position = (0, 0)
         self.size = size
         self.position = position
 
