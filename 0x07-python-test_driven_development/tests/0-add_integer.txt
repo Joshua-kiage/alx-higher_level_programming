@@ -1,0 +1,34 @@
+Test for ``add_integer`` function
+=================================
+
+Import function ``add_integer``
+---------------------------------
+
+This is an test file, for add_integer function:
+
+Import the function
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Test
+
+>>> add_integer(2, 3)
+5
+>>> add_integer(-10, 5)
+-5
+>>> add_integer(3.8, 2)
+5
+>>> add_integer(5.5)
+103
+>>> add_integer(2)
+100
+>>> add_integer(10, -5)
+5
+>>> add_integer(100, 60.5)
+160
+>>> add_integer(60.5, 100)
+160
+>>> add_integer(0, 40.5)
+40
+>>> add_integer(40.5, 0)
+40
